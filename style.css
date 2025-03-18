@@ -458,3 +458,101 @@ section{
     font-size: 7px;
 }
 
+/* Responsive untuk Tablet */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+    .home {
+        gap: 10rem;
+    }
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+    .home-content p {
+        font-size: 1.1rem;
+    }
+    .home-image img {
+        width: 42vh;
+    }
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        padding: 0.2rem 3%;
+    }
+    .navbar {
+        display: none; /* Navbar bisa dibuat menu dropdown jika diinginkan */
+    }
+    .menu-icon {
+        display: block;
+    }
+    .home {
+        flex-direction: column;
+        gap: 5rem;
+        text-align: center;
+    }
+    .home-content {
+        align-items: center;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+    .home-image img {
+        width: 40vh;
+    }
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive untuk Layar Kecil */
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    .home-content h3 {
+        font-size: 1.8rem;
+    }
+    .home-content p {
+        font-size: 0.9rem;
+    }
+    .home-image img {
+        width: 35vh;
+    }
+    .btn-group {
+        flex-direction: column;
+    }
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
